@@ -1,0 +1,36 @@
+<!-- Converting from [USD] 
+Converting to [GBP] 
+Amount [50] 
+Convert 
+
+Not a Valid Amount
+Not a valid Code: ZZZ
+
+The result is (symbol) 33.44.
+Home -->
+
+{% extends 'base.html' %}
+
+{% block title %} 
+    Convert Currency
+{% endblock %}
+
+{% block content %}
+    <h1>Convert Currency</h1>
+    <form action="/converted" method="GET">
+        <label for="convert1">Converting from:</label>
+            <input name="convert1" id="convert1" type="text" autofocus 
+            required placeholder="3-letter currency code"/>
+            <br />
+        <label for="convert2">Converting to:</label>
+            <input name="convert2" id="convert2" type="text" 
+            required placeholder="3-letter currency code"/>
+            <br />
+        <label for="amount">Amount:</label>
+            <input name="amount" id="amount" type="text" 
+            required placeholder="1.00"/>
+            <br />
+        <button type="submit">Convert</button>
+    </form>
+{% endblock %}
+

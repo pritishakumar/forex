@@ -1,0 +1,10 @@
+.flashes {
+    list-style: none;
+    width: auto;
+}
+
+.error {
+    background-color: red;
+    border: 1px black solid;
+    width: 200px;
+}

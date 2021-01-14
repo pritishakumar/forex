@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css" />
+</head>
+<body>
+    {% if get_flashed_messages(with_categories = True) %}
+        <ul class="flashes">
+            {% for (category, message) in get_flashed_messages(with_categories = True) %}
+                <li class={{category}}> {{message}} </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+</body>
+</html>

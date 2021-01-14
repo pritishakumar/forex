@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} 
+    Converted Currency
+{% endblock %}
+
+{% block content %}
+    <h1>Converted Currency</h1>
+    <p>The result is <span>{{symbol}} {{amount}}</span>.</p>
+
+    <form action="/" method="GET">
+        <button type="submit">Home</button>
+    </form>
+{% endblock %}

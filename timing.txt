@@ -1,0 +1,3 @@
+30min = Reading instructions and planning
+45min = Created the integration and unit tests
+2hrs 45min = Finished functionality of app and finalised tests
